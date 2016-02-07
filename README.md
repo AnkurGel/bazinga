@@ -12,7 +12,7 @@ And then execute:
     $ bundle
 
 ## Usage
-Just run `rails console`.
+Just run `rails console`.   
 ![dev](https://www.dropbox.com/s/7hdoy6b21qnm3or/Screenshot%202016-02-07%2018.58.28.png?raw=1)
 ![staging](https://www.dropbox.com/s/3o4jmna8bd9dsyk/Screenshot%202016-02-07%2019.02.46.png?raw=1)
 ## Customization:
