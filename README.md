@@ -19,7 +19,7 @@ Just run `rails console`.
 You can modify the app name by adding the following in your project's `config/application.rb` (inside `class Application`) :
 ```ruby
     console do
-      Bazinga::APP_NAME = 'railsApp'
+      Bazinga::APP_NAME = 'railsApp' if defined? Bazinga
     end
 ```
 or start the console by customized environment tag:   
