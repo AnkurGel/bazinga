@@ -21,15 +21,15 @@ module Bazinga
         console_tag = case env_tag
                         when 'production' then "(#{COLOR_MAP['red']}prod#{COLOR_MAP['reset']})"
                         when 'staging' then "(#{COLOR_MAP['yellow']}staging#{COLOR_MAP['reset']})"
-                        when 'development' then "(#{COLOR_MAP['green']}development#{COLOR_MAP['reset']})"
+                        when 'development' then "(#{COLOR_MAP['green']}dev#{COLOR_MAP['reset']})"
                         else "(#{COLOR_MAP['yellow']}#{env_tag})#{COLOR_MAP['reset']}"
                       end
 
         IRB.conf[:PROMPT][:RAILS_ENV] = {
-            :PROMPT_I => "#{app_name}#{console_tag}> ",
-            :PROMPT_N => "#{app_name}#{console_tag}> ",
+            :PROMPT_I => "#{app_name}#{console_tag} :%03n>  ",
+            :PROMPT_N => "#{app_name}#{console_tag} :%03n?> ",
             :PROMPT_S => "",
-            :PROMPT_C => "#{app_name}#{console_tag}?> ",
+            :PROMPT_C => "#{app_name}#{console_tag} :%03n?> ",
             :RETURN => "=> %s\n"
         }
 
