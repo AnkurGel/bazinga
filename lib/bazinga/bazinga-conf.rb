@@ -34,6 +34,7 @@ module Bazinga
         }
 
         IRB.conf[:PROMPT_MODE] = :RAILS_ENV
+        puts "#{COLOR_MAP['red']}Logged in on Production#{COLOR_MAP['reset']}" if env_tag.eql? 'production'
       end
     end
   end
